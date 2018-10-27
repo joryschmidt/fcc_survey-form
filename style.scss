@@ -1,0 +1,124 @@
+$border-radius: 4px;
+$def-border: 1px solid black;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+.content {
+  width: 80vw;
+  padding: 2rem;
+  
+  border: $def-border;
+  border-radius: $border-radius;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom right, #eee, #aaa);
+}
+
+#title {
+  font-size: 4.5rem;
+}
+
+#description {
+  
+}
+
+#survey-form {
+  width: 75%;
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 4rem;
+}
+
+.survey-form {
+  
+  &__input {
+    border: 1px solid lighten(black, 50%);
+    border-radius: $border-radius;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+.form-label {
+  justify-self: end;
+}
+
+#name {
+  
+  &-label {
+    align-self: center;
+  }
+}
+
+#email {
+  
+  &-label {
+    align-self: center;
+  }
+}
+
+#number {
+  
+  &-label {
+    align-self: center;
+  }
+}
+
+#dropdown {
+  color: lighten(black, 50%);
+  
+  &__label {
+    align-self: center;
+  }
+}
+
+.dropdown__option {
+  border-radius: $border-radius;
+}
+
+#play_style {
+  
+  &__label {
+    align-self: center;
+  }
+}
+
+.play_style-option {
+  
+}
+
+#openings {
+  
+}
+
+.opening {
+  
+}
+
+#other {
+  height: 20rem;
+}
+
+.button {
+  grid-column-start: 2;
+}
+
+#submit {
+  border: $def-border;
+  border-radius: $border-radius;
+  
+  background-color: #438ebc;
+  font-weight: lighter;
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: white;
+}

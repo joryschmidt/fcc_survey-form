@@ -1,0 +1,71 @@
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif; }
+
+.content {
+  width: 80vw;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom right, #eee, #aaa); }
+
+#title {
+  font-size: 4.5rem; }
+
+#survey-form {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 4rem; }
+
+.survey-form__input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 1.6rem; }
+
+.form-label {
+  justify-self: end; }
+
+#name-label {
+  align-self: center; }
+
+#email-label {
+  align-self: center; }
+
+#number-label {
+  align-self: center; }
+
+#dropdown {
+  color: gray; }
+  #dropdown__label {
+    align-self: center; }
+
+.dropdown__option {
+  border-radius: 4px; }
+
+#play_style__label {
+  align-self: center; }
+
+#other {
+  height: 20rem; }
+
+.button {
+  grid-column-start: 2; }
+
+#submit {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #438ebc;
+  font-weight: lighter;
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */

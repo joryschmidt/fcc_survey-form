@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1 id="title">General Chess Survey</h1>
+      <p id="description">
+        Tell us what you think about chess
+      </p>
+      <form id="survey-form">
+        <label for="name" class='form-label' id="name-label">Name</label>
+          <input class='survey-form__input' type="text" name="name" id="name" placeholder="Name" required />
+          
+        <label for="email" class='form-label' id="email-label">Email</label>
+          <input class='survey-form__input' type="email" name="email" id="email" placeholder="Email" required />
+          
+        <label for="age" class='form-label' id="number-label">Age</label>
+          <input class='survey-form__input' type="number" name="age" id="number" min="13" max="100" placeholder="Age" required />
+          
+        <label for="dropdown" class='form-label' id="dropdown__label">What is your favorite piece?</label>
+          <select name="favorite_piece" id="dropdown" class="survey-form__input">
+            <option class="dropdown__option"value="pawn">Pawn</option>
+            <option class="dropdown__option"value="rook">Rook</option>
+            <option class="dropdown__option"value="knight">Knight</option>
+            <option class="dropdown__option"value="bishop">Bishop</option>
+            <option class="dropdown__option"value="queen">Queen</option>
+            <option class="dropdown__option"value="king">King</option>
+          </select>
+          
+        <label for="play_style" class='form-label' id="play_style__label">What is your play style?</label>
+          <ul id="play_style" style="list-style: none;">
+            <li class="radio"><input type="radio" name="play_style" class="play_style-option" id="positional" value="positional"><label for="positional">Positional</label></li>
+            <li class="radio"><input type="radio" name="play_style" class="play_style-option" id="tactical" value="tactical"><label for="tactical">Tactical</label></li>
+          </ul>
+          
+        <label for="openings" class='form-label'>Which of these openings do you play?</label>
+          <ul id="openings" style="list-style: none;">
+            <li class="opening"><input type="checkbox" value="0" name="sicilian" id="sicilian"><label for="sicilian">Sicilian</label></li>
+            <li class="opening"><input type="checkbox" value="1" name="qga" id="qga"><label for="qga">Queen's Gambit Accepted</label></li>
+            <li class="opening"><input type="checkbox" value="2" name="qgd" id="qgd"><label for="qgd">Queen's Gambit Declined</label></li>
+            <li class="opening"><input type="checkbox" value="3" name="kingsgambit" id="kingsgambit"><label for="kingsgambit">King's Gambit</label></li>
+            <li class="opening"><input type="checkbox" value="4" name="french" id="frenc"><label for="french">French</label></li>
+            <li class="opening"><input type="checkbox" value="5" name="caro-kann" id="caro-kann"><label for="caro-kann">Caro-Kann</label></li>
+            <li class="opening"><input type="checkbox" value="6" name="scotch" id="scotch"><label for="scotch">Scotch</label></li>
+            <li class="opening"><input type="checkbox" value="7" name="ruy" id="ruy"><label for="ruy">Ruy Lopez</label></li>
+            <li class="opening"><input type="checkbox" value="8" name="italian" id="italian"><label for="italian">Italian Game</label></li>
+            <li class="opening"><input type="checkbox" value="9" name="catalan" id="catalan"><label for="catalan">Catalan</label></li>
+            <li class="opening"><input type="checkbox" value="10" name="kingsindian" id="kingsindian"><label for="kingsindian">King's Indian Attack</label></li>
+            <li class="opening"><input type="checkbox" value="11" name="kingsindiand" id="kingsindiand"><label for="kingsindiand">King's Indian Defense</label></li>
+            <li class="opening"><input type="checkbox" value="12" name="queensindian" id="queensindian"><label for="queensindian">Queen's Indian</label></li>
+            <li class="opening"><input type="checkbox" value="13" name="nimzo" id="nimzo"><label for="nimzo">Nimzo-Indian</label></li>
+            <li class="opening"><input type="checkbox" value="14" name="pirc" id="pirc"><label for="pirc">Pirc</label></li>
+            <li class="opening"><input type="checkbox" value="15" name="grunfeld" id="grunfeld"><label for="grunfeld">Gr&uuml;nfeld</label></li>
+            <li class="opening"><input type="checkbox" value="16" name="dutch" id="dutch"><label for="dutch">Dutch</label></li>
+            <li class="opening"><input type="checkbox" value="17" name="benoni" id="benoni"><label for="benoni">Benoni</label></li>
+            <li class="opening"><input type="checkbox" value="18" name="alekhine" id="alekhine"><label for="alekhine">Alekhine Defense</label></li>
+            <li class="opening"><input type="checkbox" value="19" name="english" id="english"><label for="english">English</label></li>
+            <li class="opening"><input type="checkbox" value="20" name="budapest" id="budapest"><label for="budapest">Budapest Gambit</label></li>
+            <li class="opening"><input type="checkbox" value="21" name="bong" id="bong"><label for="bong">Bongcloud Attack</label></li>
+          </ul>
+          
+        <label for="other" class='form-label'>Anything else you'd like to mention?</label>
+          <textarea id="other" name="other" id="other" class='survey-form__input' placeholder="Write your thoughts here..."></textarea>
+          
+        <div class="button"><input type="submit" value="Submit" id="submit" /></div>
+      </form>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
